@@ -107,6 +107,11 @@ print('El número equivalente es:', entero_equivalente)
 
     Si se abre un archivo para escritura y no existe, uno nuevo es creado.
     Pero si existe, el contenido anterior es borrado y reemplazado por el nuevo :P
+    Los métodos de utilidad en operaciones IO son por ejemplo write(), readlines()
+
+    En la lectura de archivos normalmente puede suceder que el recurso no es
+    encontrado y por tanto surge una excepción la cual puede manejarse ...
+    En primer acercamiento el mecanismo de excepciones es muy similar que en Java
 """
 
 import os
@@ -116,10 +121,18 @@ for item in file_list :
 
 os.chdir('archivos')
 file_object = open('dionisos.txt', 'w')
-file_object.write('Exploración FC\n')
+while True :
+    cadena = input('Enter >> ')
+    if not cadena :
+        break
+    file_object.write(cadena  + '\n')
 file_object.close()
 
-"""
-PENDIENTE
-11. Write File with Prompt ...
-"""
+try :
+    file_object = open('dionisos.txt', 'r')
+    str_list = file_object.readlines()
+    for a_line in str_list :
+        print(a_line, end='')
+    file_object.close()
+except FileNotFoundError :
+    print('El archivo para lectura no se encuentra!')
