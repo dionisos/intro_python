@@ -93,6 +93,7 @@ for celsius in cels_list :
     fahr_list.append(fahrenheit)
 
 """
+
     Si se utilizan índices negativos se hace referencia a los elementos al revés,
     por ejemplo con un -1 se hace referencia al último elemento de la lista!
     Python soporta la técnica 'slicing' la cual permite acceder a un subconjunto
@@ -107,6 +108,7 @@ for celsius in cels_list :
 
     Las lista son mutables (se pueden modificar), se puede utilizar 'slicing'
     para especificar tanto un objetivo como una fuente de una asignación!
+
 """
 
 print('Indexado ', str(fahr_list[0]), ' Tamaño de la lista: ', len(fahr_list))
@@ -121,6 +123,7 @@ lista_enteros[3:3] = [-3, -2, -1]
 print(lista_enteros)
 
 """
+
     Python proporciona una manera sencilla de trabajar secuencias de enteros,
     para ello se utiliza la función integrada 'range'
     Cabe señalar que los rangos son muy útiles para iterar sobre listas ...
@@ -128,6 +131,7 @@ print(lista_enteros)
     ~ si se omite el inicio se infiere que el índice comienza en cero
     range(end), range(start, end), range(start, end, step)
     Importante señalar que el último índice es omitido (end)!!
+
 """
 
 temp_list = [0.01, 67.3, 21.2, 15.1]
@@ -138,10 +142,12 @@ for contador in range(len(temp_list)):
 print(temp_list)
 
 """
+
     Una forma de eficientar el código Python es no utilizar tanto 'print'
     para ello se recomienda utilizar el método 'join' y al final
     imprimir la cadena resultante ...
     En el siguiente ejercicio se muestra su uso para hallar números primos :)
+
 """
 
 bool_list = [True] * 100
@@ -163,11 +169,13 @@ print(300 in my_list)
 print(50 not in my_list)
 
 """
+
     Python 2.0 introduce la función 'enumerate' la cual nos permite
     iterar directamente sobre la información mientras se obtiene un índice "for free"
     Genera una serie de tuplas en la forma (index, item). Su sintaxis es la sig:
 
     enumerate(iterable, start=0)
+
 """
 
 beat_list = ['John', 'Paul', 'George', 'Ringo']
@@ -180,6 +188,7 @@ lista_numeros = [i * j for i in range(1, 4) for j in range(1, 4) if i >= j]
 print(lista_numeros)
 
 """
+
     Las estructuras de datos 'set' en Python tienen ciertas caracteristicas:
     - Un elemento de un set debe ser único, debe aparecer una sóla vez en el conjunto
       (una lista puede tener cualquier número de valores duplicados)
@@ -190,6 +199,7 @@ print(lista_numeros)
     El método 'split' permite separar una cadena en componentes ...
     Para concatenar cadenas se utiliza el símbolo de adición (+)
     Mientras que para conformar cadenas es útil el método 'join'
+
 """
 
 # Solamente se agregarán en el set los elementos únicos, los repetidos se ignoran ...

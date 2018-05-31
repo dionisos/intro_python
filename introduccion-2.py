@@ -1,5 +1,6 @@
 
 """
+
     En Python no se pueden pasar parámetros por referencia como en C/C++
     Es posible retornar de una función más de un valor ...
 
@@ -15,6 +16,7 @@
     Para indicar explícitamente que no se retorna un valor se puede usar 'None'
     Hay tres distintas técnicas para importar funciones de módulos en Python,
     la diferencia radica en si se cualifican con el nombre del módulo o no ¬¬
+
 """
 
 def calc_pts(x1, y1, x2, y2) :
@@ -49,6 +51,7 @@ from fractions import *
 aleatorio = random.randint(0, 9)
 
 """
+
     Una variable global tiene el mismo tiempo de vida que el programa y
     puede ser vista y utilizada por múltiples funciones.
     Éste tipo de variables son creadas mediante la palabra clave 'global' ó
@@ -56,6 +59,7 @@ aleatorio = random.randint(0, 9)
     Al usar 'global' Python busca una variable con el nombre indicado,
     si ya existe se utiliza dicha versión, si no es así se crea una nueva ...
     (no crea directamente una variable, previene que se interprete como local)
+
 """
 
 def resent_funds() :
@@ -98,6 +102,7 @@ for item in rom_list :
 print('El número equivalente es:', entero_equivalente)
 
 """
+
     Python proporciona el módulo 'os' para interactuar con archivos y directorios
     Existen varios métodos de utilidad para gestionar recursos en disco:
 
@@ -112,6 +117,7 @@ print('El número equivalente es:', entero_equivalente)
     En la lectura de archivos normalmente puede suceder que el recurso no es
     encontrado y por tanto surge una excepción la cual puede manejarse ...
     En primer acercamiento el mecanismo de excepciones es muy similar que en Java
+
 """
 
 import os

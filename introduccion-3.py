@@ -1,5 +1,6 @@
 
 """
+
     Los diccionarios en Python tal y como en otros lenguajes nos permiten
     manejar información en la forma de estructuras key/value
     Los elementos son accesados por una 'llave' y no por posición como una lista!
@@ -11,6 +12,7 @@
 
     Una vez que se ha elegido un tipo de dato para las llaves, no debe variar.
     Normalmente se utilizan cadenas para dicho propósito ...
+
 """
 
 grade_dict = { 'Alan Anderson': 4.0, 'Betsy Baron': 2.8, 'Tom Swift': 3.5 }
@@ -23,6 +25,7 @@ for key in grade_dict:
     print(key, '\t', grade_dict[key])
 
 """
+
     Un problema con los diccionarios es tratar de acceder a una llave que no existe.
     Una solución es buscar la llave antes de acceder a su valor mediante 'in',
     otra forma más eficiente es con el método get()
@@ -30,6 +33,7 @@ for key in grade_dict:
     El método items() regresa todo el contenido de un diccionario como una lista,
     cada elemento en esta lista es una dupla (key, value) ...
     Es un método útil si se desea iterar sobre los elementos de un diccionario.
+
 """
 
 llave = 'Dionisos'
@@ -44,6 +48,7 @@ for k, v in grade_dict.items() :
     print('Key: {}, Value: {}'.format(k, v))
 
 """
+
     Otro tipo de colección de datos, relacionada con el diccionario es el Python Set.
     - Contiene elementos simples, tal y como las listas
     - Los elementos deben ser únicos. Agregar un valor que ya existe no tiene efecto.
@@ -54,6 +59,7 @@ for k, v in grade_dict.items() :
 
     Para agregar o eliminar elementos se usan add() y remove() respectivamente.
     Las operaciones entre conjuntos generan "sets" a su vez.
+
 """
 
 empty_set = set()
@@ -84,12 +90,14 @@ primes = nums - comps
 print('Primos:', primes)
 
 """
+
     Python puede crear matrices de dos dimensiones facilmente por inicialización.
     Las matrices pueden contener cualquier tipo de dato por supuesto.
     Una vez que se ha creado una matriz, se pueden asignar los elementos que
     se desee siempre y cuando los índices no salgan de rango (basados en cero) ...
 
     Es posible generar matrices irregulares sin problema alguno.
+
 """
 
 list2D = [
@@ -107,10 +115,12 @@ mat =    [
 print("Longitudes:", len(mat), len(mat[0]), len(mat[1]), len(mat[2]))
 
 """
+
     THE PYTHON MATRIX PROBLEM
     En el siguiente ejercicio ocurre que Python crea una fila y después tres
     referencias a la misma, en lugar de tener tres filas distintas ¬¬
     Para resolver éste problema hay que construir la lista multidimensional a pie :P
+
 """
 
 mat = [ [0] * 3 ] * 3

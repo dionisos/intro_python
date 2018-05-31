@@ -1,11 +1,13 @@
 
 """
+
     En Python cada elemento de información es un objeto (incluso int, string, etc)
     La palabra clave 'pass' significa "no hay más que hacer aquí por ahora ..."
     A cualquier objeto se le pueden agregar directamente campos de información
     (variables de instancia) en tiempo de ejecución! sólo en Python :S
     ~ esto indica que la estructura de datos se mantiene "modificable"
     y por lo tanto algunas instancias pueden o no tener ciertas variables!!
+
 """
 
 class Person :
@@ -16,6 +18,7 @@ instance_person.name = 'Carlos Soria'
 instance_person.nickname = 'Dionisos'
 
 """
+
     Los métodos definidos en una clase si es que serán asociados a una
     instancia de la misma, deben llevar 'self' como parámetro en su definición.
     El método __init__ es el constructor en Python, invocado una vez que
@@ -23,6 +26,7 @@ instance_person.nickname = 'Dionisos'
     Cuando Python evalua un método a través de un objeto, automáticamente
     pasa un referencia del mismo. Es por ello que se utiliza 'self' :P
     El método __str__ determina que sucede cuando un objeto se convierte a cadena.
+
 """
 
 class Dog :
@@ -42,9 +46,12 @@ instance_dog = Dog('Jack', 'Eukanuba')
 instance_dog.speak()
 print(instance_dog)
 
+
 """
+
     Se comenta que Python es un lenguake para pequeños sistema no comerciales :(
     No dispone de modificadores de acceso, nada es privado todo es público!!
+
 """
 
 class Point3D :
@@ -75,12 +82,14 @@ def print_them_out(primer_argumento, *args) :
 print_them_out("Dionisos", 'John', 'Paul', 'George', 'Ringo')
 
 """
+
     Cuando una clase hereda de otra, automáticamente obtiene los métodos
     y atributos del padre. Los cuales puede mantener u modificar.
     En Python todos los métodos son heredados incluídos los especiales (__init__)
     Todas la 'variables de clase' son heredadas.
     No obstante las 'variables de instancia' no necesariamente.
     ~ debido a que las variables están atadas a las instancias y no a las clases!
+
 """
 
 class Pet :
@@ -123,6 +132,7 @@ f2 = PFraction('2/3')
 print('El resultado es: ', f1 + f2)
 
 """
+
     Para crear una "variable de clase" solamente hay que definirlas dentro
     del cuerpo de la clase (sin un 'self' asociado claro).
     Por otro lado es posible crear métodos estáticos @staticmethod y
@@ -132,6 +142,7 @@ print('El resultado es: ', f1 + f2)
     1. como una variable de instancia
     2. como una variable de clase
     3. como una variable de clase heredada
+
 """
 
 class Vinyl :
