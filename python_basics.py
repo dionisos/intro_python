@@ -215,3 +215,10 @@ print(cadena.split(','))
 artist_list = ['John', 'Paul', 'George', 'Ringo']
 separador = "-"
 print(separador.join(artist_list))
+
+"""
+Python Without Fear - Brian Overland
+Ed. Addison-Wesley Professional 2017
+SECUENCIA
+python_functions.py
+"""

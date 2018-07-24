@@ -151,6 +151,8 @@ print("Matriz\n", np.multiply.outer(x, x))
 """
 
 """
+NumPy Essentials - Leo Chin, Tanmay Dutta
+Ed. Packt Publishing 2016
 PENDIENTE
 Broadcasting and shape manipulation
 """

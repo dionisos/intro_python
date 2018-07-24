@@ -142,3 +142,11 @@ try :
     file_object.close()
 except FileNotFoundError :
     print('El archivo para lectura no se encuentra!')
+
+
+"""
+Python Without Fear - Brian Overland
+Ed. Addison-Wesley Professional 2017
+SECUENCIA
+python_dictionaries.py
+"""

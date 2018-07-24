@@ -160,8 +160,11 @@ ride_lighting = Vinyl('Ride the Lighting', 'Metallica')
 black = Vinyl('Black Album', 'Metallica')
 Vinyl.metodo_estatico()
 
+
 """
-PENDIENTE
+Python Without Fear - Brian Overland
+Ed. Addison-Wesley Professional 2017
+SECUENCIA
 18. Advanced Pythonic Techniques
 (Con dicho capítulo terminamos el libro ...)
 """

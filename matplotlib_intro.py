@@ -84,7 +84,7 @@ plt.grid(True)
 
 
 # HISTOGRAM
-"""
+
 np.random.seed(19680801)
 
 mu = 100
@@ -101,7 +101,7 @@ ax.set_xlabel('Smarts')
 ax.set_ylabel('Probability density')
 ax.set_title(r'Histogram of IQ: $\mu=100$, $\sigma=15$')
 fig.tight_layout()
-"""
+
 
 
 # TRENDLINE OVER SCATTER
@@ -174,7 +174,8 @@ plt.polar(theta, [1.2] * len(theta))
 plt.show()
 
 """
+Matplotlib for Python Developers - Allen Yu, Claire Chung
+Ed. Packt Publishing 2018
 PENDIENTE
-Matplotlib for Python Developers
-> Initiating a figure with plt.figure()
+Initiating a figure with plt.figure()
 """

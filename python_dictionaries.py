@@ -139,3 +139,11 @@ print(mat_3d)
 rows = cols = 3
 matriz = [[(i + 1) * (j + 1) for j in range(cols)] for i in range(rows)]
 print(matriz)
+
+
+"""
+Python Without Fear - Brian Overland
+Ed. Addison-Wesley Professional 2017
+SECUENCIA
+python_classes.py
+"""
