@@ -151,6 +151,6 @@ print(ebola.Cases_Guinea.sum(skipna = True))
 """
 Pandas For Everyone: Python Data Analysis - Daniel Y. Chen
 Ed. Addison-Wesley Professional 2017
-PENDIENTE
-6. Tidy Data ~ (nuevo archivo)
+SECUENCIA
+pandas_tidy_data.py
 """
